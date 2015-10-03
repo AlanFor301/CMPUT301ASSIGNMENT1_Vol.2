@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SignlePlayerReadyCheck"
+            android:label="@string/title_activity_signle_player_ready_check" >
+        </activity>
+        <activity
+            android:name=".MultiPlayerActivity"
+            android:label="@string/title_activity_multi_player" >
+        </activity>
     </application>
 
 </manifest>
