@@ -13,4 +13,11 @@
     <string name="title_activity_single_player_result_page">Single Player Result Page</string>
     <string name="title_activity_signle_player_ready_check">Signle Player Ready Check</string>
     <string name="title_activity_multi_player">MultiPlayer Activity</string>
+    <string name="title_activity_single_player_reflection">Single Player Reflection Activity
+    </string>
+    <string name="two_players">Two Players</string>
+    <string name="three_players">Three Players</string>
+    <string name="four_players">Four Players</string>
+    <string name="five_players">Five Players</string>
+
 </resources>

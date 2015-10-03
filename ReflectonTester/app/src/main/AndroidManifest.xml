@@ -24,6 +24,10 @@
             android:name=".MultiPlayerActivity"
             android:label="@string/title_activity_multi_player" >
         </activity>
+        <activity
+            android:name=".SinglePlayerReflectionActivity"
+            android:label="@string/title_activity_single_player_reflection" >
+        </activity>
     </application>
 
 </manifest>
