@@ -19,5 +19,16 @@
     <string name="three_players">Three Players</string>
     <string name="four_players">Four Players</string>
     <string name="five_players">Five Players</string>
+    <string name="title_activity_two_player">Two Player</string>
+    <string name="title_activity_three_player">Three Player</string>
+    <string name="title_activity_four_player">Four Player</string>
+    <string name="title_activity_five_player">FivePlayer</string>
+    <string name="title_activity_result_page">Result Page</string>
+
+    <string name="player_one">Player One  </string>
+    <string name="player_two">Player Two</string>
+    <string name="player_three">Player Three</string>
+    <string name="player_four">Player Four</string>
+    <string name="player_five">Player Five</string>
 
 </resources>

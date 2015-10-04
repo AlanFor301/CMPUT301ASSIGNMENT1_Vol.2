@@ -28,6 +28,26 @@
             android:name=".SinglePlayerReflectionActivity"
             android:label="@string/title_activity_single_player_reflection" >
         </activity>
+        <activity
+            android:name=".TwoPlayer"
+            android:label="@string/title_activity_two_player" >
+        </activity>
+        <activity
+            android:name=".ThreePlayer"
+            android:label="@string/title_activity_three_player" >
+        </activity>
+        <activity
+            android:name=".FourPlayer"
+            android:label="@string/title_activity_four_player" >
+        </activity>
+        <activity
+            android:name=".FivePlayer"
+            android:label="@string/title_activity_five_player" >
+        </activity>
+        <activity
+            android:name=".ResultPage"
+            android:label="@string/title_activity_result_page" >
+        </activity>
     </application>
 
 </manifest>
