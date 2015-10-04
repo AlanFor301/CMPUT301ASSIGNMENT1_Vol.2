@@ -55,7 +55,7 @@ public class TwoPlayer extends Activity implements OnClickListener {
             try{
                 count =  playerOneListInTwoplayer.get(playerOneListInTwoplayer.size()-1).getBuzzCount()+1;
             }catch (Exception e){
-                count = 0;
+                count = 1;
             }
             Toast.makeText(getApplicationContext(), "PlayerOne Count is: "+String.valueOf(count), Toast.LENGTH_SHORT).show();
 
@@ -63,12 +63,12 @@ public class TwoPlayer extends Activity implements OnClickListener {
             saveInFile(PLAYERONEFILENAME);
             //classIntent(ResultPage.class);
         }
-        else if(view.getId()==R.id.b_player_two_in_twoplayer) {
+        else if(view.getId()==R.    id.b_player_two_in_twoplayer) {
             int count;
             try{
                 count =  playerTwoListInTwoplayer.get(playerTwoListInTwoplayer.size()-1).getBuzzCount()+1;
             }catch (Exception e){
-                count = 0;
+                count = 1;
             }
             playerTwoListInTwoplayer.add(new PlayerTwo(count));
             saveInFile(PLAYERTWOFILENAME);
