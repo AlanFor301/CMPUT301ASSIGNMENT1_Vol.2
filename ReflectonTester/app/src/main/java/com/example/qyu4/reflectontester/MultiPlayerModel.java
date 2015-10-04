@@ -5,6 +5,9 @@ package com.example.qyu4.reflectontester;
  */
 public class MultiPlayerModel {
     public int buzzCount;
+    public MultiPlayerModel(int buzzCount) {
+        this.setBuzzCount(buzzCount);
+    }
     public int getBuzzCount() {
         return buzzCount;
     }

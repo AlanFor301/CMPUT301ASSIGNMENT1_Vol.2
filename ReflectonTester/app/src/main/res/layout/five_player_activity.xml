@@ -6,7 +6,54 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.qyu4.reflectontester.FivePlayer">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_one"
+        android:id="@+id/b_playerone_in_fiveplayer"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:minHeight="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_three"
+        android:id="@+id/b_playerthree_in_fiveplayer"
+        android:minHeight="100dp"
+        android:layout_below="@+id/b_playertwo_in_fiveplayer"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_five"
+        android:id="@+id/b_playerfive_in_fiveplayer"
+        android:minHeight="100dp"
+        android:layout_below="@+id/b_playerfour_in_fiveplayer"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/b_playerfour_in_fiveplayer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_two"
+        android:id="@+id/b_playertwo_in_fiveplayer"
+        android:layout_below="@+id/b_playerone_in_fiveplayer"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/b_playerone_in_fiveplayer"
+        android:minHeight="100dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_four"
+        android:id="@+id/b_playerfour_in_fiveplayer"
+        android:minHeight="100dp"
+        android:layout_below="@+id/b_playerthree_in_fiveplayer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

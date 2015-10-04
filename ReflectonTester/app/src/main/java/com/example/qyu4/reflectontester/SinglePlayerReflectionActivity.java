@@ -26,7 +26,7 @@ import java.util.List;
 
 public class SinglePlayerReflectionActivity extends Activity implements OnClickListener {
     public long startTime;
-    private static final String FILENAME = "file.sav";
+    private static final String FILENAME = "singlePlayer.sav";
     private ArrayList<SinglePlayerModel> singlePlayerList = new ArrayList<>();
     private ArrayAdapter adapter;
     private ListView lv;
@@ -71,20 +71,12 @@ public class SinglePlayerReflectionActivity extends Activity implements OnClickL
     }
     private void saveInFile() {
         try {
-            //****************gson**********************//
             FileOutputStream fos = openFileOutput(FILENAME, 0);
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
             Gson gson  =new Gson();
             gson.toJson(singlePlayerList, out);
-            //saving file
             out.flush();
             fos.close();
-            //******************************************//
-            //FileOutputStream fos = openFileOutput(FILENAME,
-            //		Context.MODE_APPEND);
-            //MODE_APPEND append new context at EOF
-            //fos.write(text.getBytes());
-            //fos.close();
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
             throw new RuntimeException(e);
@@ -94,7 +86,6 @@ public class SinglePlayerReflectionActivity extends Activity implements OnClickL
         }
     }
     private void loadFromFile() {
-        //ArrayList<Tweet> tweets = new ArrayList<Tweet>();
         try {
             FileInputStream fis = openFileInput(FILENAME);
             BufferedReader in = new BufferedReader(new InputStreamReader(fis));
