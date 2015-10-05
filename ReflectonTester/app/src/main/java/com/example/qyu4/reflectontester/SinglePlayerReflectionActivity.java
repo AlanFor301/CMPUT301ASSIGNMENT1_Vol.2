@@ -1,6 +1,7 @@
 package com.example.qyu4.reflectontester;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -27,9 +28,10 @@ import java.util.List;
 public class SinglePlayerReflectionActivity extends Activity implements OnClickListener {
     public long startTime;
     private static final String FILENAME = "singlePlayer.sav";
-    private ArrayList<SinglePlayerModel> singlePlayerList = new ArrayList<>();
+    private ArrayList<SinglePlayer> singlePlayerList = new ArrayList<SinglePlayer>();
     private ArrayAdapter adapter;
     private ListView lv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,17 +60,19 @@ public class SinglePlayerReflectionActivity extends Activity implements OnClickL
         if(view.getId()==R.id.b_single_player_click){
             setResult(RESULT_OK);
             //Button singleReadyButton = (Button) findViewById(R.id.b_single_player_click);
-            final TextView tv = (TextView) findViewById(R.id.single_player_result);
+            //final TextView tv = (TextView) findViewById(R.id.single_player_result);
             double estimatedTime = (System.nanoTime() - startTime) / 1000000;
-
-            tv.setText(String.valueOf(estimatedTime));
-            singlePlayerList.add(new SinglePlayerModel(estimatedTime));
+            singlePlayerList.add(new SinglePlayer(estimatedTime));
             saveInFile();
+            //double testValue = calTenMax();
+            //tv.setText(String.valueOf(testValue));
             adapter.notifyDataSetChanged();
+            //classIntent(SignlePlayerReadyCheck.class);
 
         }
 
     }
+
     private void saveInFile() {
         try {
             FileOutputStream fos = openFileOutput(FILENAME, 0);
@@ -93,17 +97,20 @@ public class SinglePlayerReflectionActivity extends Activity implements OnClickL
             //******************************************//
             Gson gson = new Gson();
             // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
-            Type arrayListType = new TypeToken<ArrayList<SinglePlayerModel>>(){}.getType();
+            Type arrayListType = new TypeToken<ArrayList<SinglePlayer>>(){}.getType();
             singlePlayerList = gson.fromJson(in, arrayListType);
             //******************************************//
 
         } catch (FileNotFoundException e) {
             // TODO Auto-generated catch block
-            singlePlayerList = new ArrayList<SinglePlayerModel>();
+            singlePlayerList = new ArrayList<SinglePlayer>();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
-
+    public void classIntent(Class newClass){
+        Intent openNewActivity = new Intent(getApplicationContext(), newClass);
+        startActivity(openNewActivity);
+    }
 }

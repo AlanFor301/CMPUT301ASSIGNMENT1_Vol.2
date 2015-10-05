@@ -13,8 +13,7 @@
     <string name="title_activity_single_player_result_page">Single Player Result Page</string>
     <string name="title_activity_signle_player_ready_check">Signle Player Ready Check</string>
     <string name="title_activity_multi_player">MultiPlayer Activity</string>
-    <string name="title_activity_single_player_reflection">Single Player Reflection Activity
-    </string>
+    <string name="title_activity_single_player_reflection">Single Player Reflection Activity</string>
     <string name="two_players">Two Players</string>
     <string name="three_players">Three Players</string>
     <string name="four_players">Four Players</string>
@@ -24,11 +23,29 @@
     <string name="title_activity_four_player">Four Player</string>
     <string name="title_activity_five_player">FivePlayer</string>
     <string name="title_activity_result_page">Result Page</string>
-
     <string name="player_one">Player One  </string>
     <string name="player_two">Player Two</string>
     <string name="player_three">Player Three</string>
     <string name="player_four">Player Four</string>
     <string name="player_five">Player Five</string>
+
+    <string name="all_time_max">maximum of all time: </string>
+    <string name="all_time_min">minimum of all time: </string>
+    <string name="all_time_average">average of all time: </string>
+    <string name="all_time_median">median of all time: </string>
+
+    <string name="ten_max">Last 10 maximum: </string>
+    <string name="one_hundred_max">Last 100 maximum: </string>
+    <string name="ten_min">Last 10 minimum: </string>
+    <string name="one_hundred_min">Last 100 minimum: </string>
+    <string name="ten_average">Last 10 average: </string>
+    <string name="one_hundred_averages">Last 100 average: </string>
+    <string name="ten_median">Last 10 median: </string>
+    <string name="one_hundred_median">Last 100 median: </string>
+
+    <string name="buzzer_count">Buzzer Count</string>
+    <string name="two_player">Two Player:</string>
+    <string name="three_player">Three Player:</string>
+    <string name="four_player">Four Player:</string>
 
 </resources>
