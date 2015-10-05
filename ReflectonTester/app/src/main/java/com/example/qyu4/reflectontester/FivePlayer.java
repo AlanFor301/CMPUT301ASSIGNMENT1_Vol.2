@@ -19,7 +19,13 @@ import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import android.view.View.OnClickListener;
-
+/**
+ * this project is for CMPUT301 assignment 1.
+ * It's a free to use in any ways.
+ * load and save file method is cited from Joshua2ua https://github.com/joshua2ua/lonelyTwitter
+ * http://stackoverflow.com/questions/351565/system-currenttimemillis-vs-system-nanotime
+ * Starting a system time point for single player
+ */
 public class FivePlayer extends Activity implements OnClickListener {
     private static final String PLAYERONEFILENAME   = "PlayerOneInFivePlayer.sav";
     private static final String PLAYERTWOFILENAME   = "PlayerTwoInFivePlayer.sav";
@@ -97,7 +103,7 @@ public class FivePlayer extends Activity implements OnClickListener {
             }
             playerThreeListInFiveplayer.add(new PlayerThree(count));
             saveInFile(PLAYERTHREEFILENAME, playerThreeListInFiveplayer);
-            Toast.makeText(getApplicationContext(), "PlayerTwo Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerThree Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
             //classIntent(ResultPage.class);
         }
@@ -110,7 +116,7 @@ public class FivePlayer extends Activity implements OnClickListener {
             }
             playerFourListInFiveplayer.add(new PlayerFour(count));
             saveInFile(PLAYERFOURFILENAME, playerFourListInFiveplayer);
-            Toast.makeText(getApplicationContext(), "PlayerTwo Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerFour Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
             //classIntent(ResultPage.class);
         }

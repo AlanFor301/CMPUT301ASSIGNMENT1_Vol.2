@@ -8,6 +8,7 @@
     <string name="multi_player">Multi Player</string>
     <string name="click">Click</string>
     <string name="ready">Ready</string>
+    <string name="clear">Clear</string>>
     <string name="title_activity_single_player_ready_check">Single Player Ready Check</string>
     <string name="single_player_game_strat">The game waits between 10ms and 2000ms before prompts you to click after you click the Ready Button.</string>
     <string name="title_activity_single_player_result_page">Single Player Result Page</string>
@@ -23,12 +24,12 @@
     <string name="title_activity_four_player">Four Player</string>
     <string name="title_activity_five_player">FivePlayer</string>
     <string name="title_activity_result_page">Result Page</string>
-    <string name="player_one">Player One  </string>
-    <string name="player_two">Player Two</string>
-    <string name="player_three">Player Three</string>
-    <string name="player_four">Player Four</string>
+    <string name="player_one">Player One:  </string>
+    <string name="player_two">Player Two: </string>
+    <string name="player_three">Player Three: </string>
+    <string name="player_four">Player Four: </string>
     <string name="player_five">Player Five</string>
-
+    <string name="statistics">stat</string>
     <string name="all_time_max">maximum of all time: </string>
     <string name="all_time_min">minimum of all time: </string>
     <string name="all_time_average">average of all time: </string>

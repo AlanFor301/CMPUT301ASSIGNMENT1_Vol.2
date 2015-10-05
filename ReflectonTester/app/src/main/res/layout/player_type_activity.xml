@@ -23,4 +23,25 @@
         android:id="@+id/b_multi_player"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/statistics"
+        android:id="@+id/b_stat"
+        android:layout_below="@+id/b_multi_player"
+        android:layout_alignStart="@+id/b_single_player"
+        android:layout_marginTop="46dp"
+        android:layout_alignEnd="@+id/b_multi_player" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear"
+        android:id="@+id/b_clear"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/b_multi_player"
+        android:layout_alignEnd="@+id/b_stat" />
 </RelativeLayout>

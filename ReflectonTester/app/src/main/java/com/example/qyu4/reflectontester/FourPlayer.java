@@ -21,7 +21,13 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-
+/**
+ * this project is for CMPUT301 assignment 1.
+ * It's a free to use in any ways.
+ * load and save file method is cited from Joshua2ua https://github.com/joshua2ua/lonelyTwitter
+ * http://stackoverflow.com/questions/351565/system-currenttimemillis-vs-system-nanotime
+ * Starting a system time point for single player
+ */
 public class FourPlayer extends Activity implements OnClickListener {
     private static final String PLAYERONEFILENAME   = "PlayerOneInFourPlayer.sav";
     private static final String PLAYERTWOFILENAME   = "PlayerTwoInFourPlayer.sav";
@@ -71,7 +77,7 @@ public class FourPlayer extends Activity implements OnClickListener {
 
             playerOneListInFourplayer.add(new PlayerOne(count));
             saveInFile(PLAYERONEFILENAME, playerOneListInFourplayer);
-            classIntent(ResultPage.class);
+            //classIntent(ResultPage.class);
         }
         else if(view.getId()==R.id.b_player_two_in_fourplayer) {
             int count;
@@ -80,12 +86,12 @@ public class FourPlayer extends Activity implements OnClickListener {
             }catch (Exception e){
                 count = 1;
             }
-            Toast.makeText(getApplicationContext(), "PlayerOne Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerTwo Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
 
             playerTwoListInFourplayer.add(new PlayerTwo(count));
             saveInFile(PLAYERTWOFILENAME, playerTwoListInFourplayer);
-            classIntent(ResultPage.class);
+            //classIntent(ResultPage.class);
         }
         else if(view.getId()==R.id.b_player_three_in_fourplayer){
             int count;
@@ -94,12 +100,12 @@ public class FourPlayer extends Activity implements OnClickListener {
             }catch (Exception e){
                 count = 1;
             }
-            Toast.makeText(getApplicationContext(), "PlayerOne Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerThree Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
 
             playerThreeListInFourplayer.add(new PlayerThree(count));
             saveInFile(PLAYERTHREEFILENAME, playerOneListInFourplayer);
-            classIntent(ResultPage.class);
+            //classIntent(ResultPage.class);
         }
         else if(view.getId()==R.id.b_player_four_in_fourplayer){
             int count;
@@ -108,7 +114,7 @@ public class FourPlayer extends Activity implements OnClickListener {
             }catch (Exception e){
                 count = 1;
             }
-            Toast.makeText(getApplicationContext(), "PlayerOne Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerFour Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
 
             playerFourListInFourplayer.add(new PlayerFour(count));

@@ -48,8 +48,7 @@
         android:text="@string/one_hundred_max"
         android:id="@+id/textView6"
         android:layout_below="@+id/textView11"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="21dp" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -94,27 +93,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/buzzer_count"
-        android:id="@+id/textView12"
-        android:layout_below="@+id/textView10"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="@string/two_player"
         android:id="@+id/textView13"
-        android:layout_below="@+id/textView12"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/textView19" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_one"
         android:id="@+id/textView14"
-        android:layout_below="@+id/textView13"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView20"
+        android:layout_alignEnd="@+id/textView22" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -122,23 +112,22 @@
         android:text="@string/player_two"
         android:id="@+id/textView15"
         android:layout_below="@+id/textView14"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/textView14" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/three_player"
         android:id="@+id/textView16"
-        android:layout_below="@+id/textView15"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="19dp" />
+        android:layout_below="@+id/textView24"
+        android:layout_alignEnd="@+id/player_two_in_twoplayer" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_one"
         android:id="@+id/textView17"
-        android:layout_below="@+id/textView16"
+        android:layout_below="@+id/textView13"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -147,31 +136,30 @@
         android:text="@string/player_two"
         android:id="@+id/textView18"
         android:layout_below="@+id/textView17"
-        android:layout_alignParentStart="true" />
+        android:layout_alignStart="@+id/textView13" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_three"
         android:id="@+id/textView19"
-        android:layout_below="@+id/textView18"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView22"
+        android:layout_alignStart="@+id/textView16" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/four_player"
         android:id="@+id/textView20"
-        android:layout_marginTop="21dp"
-        android:layout_below="@+id/textView19"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/textView12"
+        android:layout_alignEnd="@+id/textView12" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_one"
         android:id="@+id/textView21"
-        android:layout_below="@+id/textView20"
+        android:layout_below="@+id/textView16"
         android:layout_alignParentStart="true" />
 
     <TextView
@@ -179,23 +167,26 @@
         android:layout_height="wrap_content"
         android:text="@string/player_two"
         android:id="@+id/textView22"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView21"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_three"
         android:id="@+id/textView23"
-        android:layout_below="@+id/textView22" />
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/player_four"
         android:id="@+id/textView24"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView23"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -242,64 +233,147 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_one_in_twoplayer"
-        android:layout_below="@+id/textView13"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/textView25"
+        android:text="@string/all_time_max"
+        android:layout_below="@+id/textView10"
+        android:layout_alignStart="@+id/textView14" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_two_in_twoplayer"
-        android:layout_below="@+id/player_one_in_twoplayer"
-        android:layout_centerHorizontal="true" />
+        android:text="@string/all_time_min"
+        android:id="@+id/textView26"
+        android:layout_below="@+id/textView25"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_time_median"
+        android:id="@+id/textView27"
+        android:layout_below="@+id/textView26"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_time_average"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/textView27"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_one_in_fourplayer"
+        android:layout_above="@+id/textView15"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_four_in_fourplayer"
+        android:layout_below="@+id/textView23"
+        android:layout_toEndOf="@+id/textView13" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/player_one_in_threeplayer"
-        android:layout_alignTop="@+id/textView17"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/textView16"
+        android:layout_alignStart="@+id/player_four_in_fourplayer" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/player_two_in_threeplayer"
         android:layout_below="@+id/player_one_in_threeplayer"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/textView23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_two_in_fourplayer"
+        android:layout_above="@+id/textView23"
+        android:layout_alignStart="@+id/player_four_in_fourplayer" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/player_three_in_fourplayer"
+        android:layout_above="@+id/player_four_in_fourplayer"
+        android:layout_toEndOf="@+id/textView23" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/player_three_in_threeplayer"
         android:layout_below="@+id/player_two_in_threeplayer"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/player_one_in_threeplayer" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_one_in_fourplayer"
-        android:layout_below="@+id/textView20"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/player_one_in_twoplayer"
+        android:layout_below="@+id/textView13"
+        android:layout_toEndOf="@+id/textView18" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_two_in_fourplayer"
-        android:layout_below="@+id/player_one_in_fourplayer"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/player_two_in_twoplayer"
+        android:layout_below="@+id/player_one_in_twoplayer"
+        android:layout_toEndOf="@+id/textView20" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_three_in_fourplayer"
-        android:layout_below="@+id/player_two_in_fourplayer"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/tv_all_max"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_toEndOf="@+id/textView25" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/player_four_in_fourplayer"
-        android:layout_below="@+id/player_three_in_fourplayer"
+        android:text="@string/buzzer_count"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_all_min"
+        android:layout_above="@+id/textView27"
+        android:layout_toEndOf="@+id/tv_all_max" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_all_median"
+        android:layout_alignTop="@+id/textView27"
+        android:layout_alignStart="@+id/tv_all_min" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_average_all"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_toEndOf="@+id/textView28" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ten_average"
+        android:layout_alignBottom="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_average_one_hundred"
+        android:layout_alignTop="@+id/tv_last_one_hundred_average"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

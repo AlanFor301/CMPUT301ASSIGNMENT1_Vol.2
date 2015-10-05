@@ -21,7 +21,13 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
-
+/**
+ * this project is for CMPUT301 assignment 1.
+ * It's a free to use in any ways.
+ * load and save file method is cited from Joshua2ua https://github.com/joshua2ua/lonelyTwitter
+ * http://stackoverflow.com/questions/351565/system-currenttimemillis-vs-system-nanotime
+ * Starting a system time point for single player
+ */
 public class ThreePlayer extends Activity implements OnClickListener {
     private static final String PLAYERONEFILENAME   = "PlayerOneInThreePlayer.sav";
     private static final String PLAYERTWOFILENAME   = "PlayerTwoInThreePlayer.sav";
@@ -88,7 +94,7 @@ public class ThreePlayer extends Activity implements OnClickListener {
             }
             playerThreeListInThreeplayer.add(new PlayerThree(count));
             saveInFile(PLAYERTHREEFILENAME, playerThreeListInThreeplayer);
-            Toast.makeText(getApplicationContext(), "PlayerTwo Count is: " + String.valueOf(count),
+            Toast.makeText(getApplicationContext(), "PlayerThree Count is: " + String.valueOf(count),
                     Toast.LENGTH_SHORT).show();
             //classIntent(ResultPage.class);
         }
@@ -118,7 +124,7 @@ public class ThreePlayer extends Activity implements OnClickListener {
         }
     }
     private void loadFromFile(String fileName) {
-/**
+
         if(fileName.equals(PLAYERONEFILENAME)){
             try {
                 FileInputStream fis = openFileInput(fileName);
@@ -128,15 +134,12 @@ public class ThreePlayer extends Activity implements OnClickListener {
                 Gson gson = new Gson();
                 // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
                 Type arrayListType = new TypeToken<ArrayList<PlayerOne>>(){}.getType();
-                playerOneListInFiveplayer = gson.fromJson(in, arrayListType);
+                playerOneListInThreeplayer = gson.fromJson(in, arrayListType);
 
 
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
-                playerOneListInFiveplayer = new ArrayList<PlayerOne>();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                playerOneListInThreeplayer = new ArrayList<PlayerOne>();
             }
         }
         else if(fileName.equals(PLAYERTWOFILENAME)){
@@ -147,15 +150,12 @@ public class ThreePlayer extends Activity implements OnClickListener {
                 Gson gson = new Gson();
                 // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
                 Type arrayListType = new TypeToken<ArrayList<PlayerTwo>>(){}.getType();
-                playerTwoListInFiveplayer = gson.fromJson(in, arrayListType);
+                playerTwoListInThreeplayer = gson.fromJson(in, arrayListType);
 
 
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
-                playerTwoListInFiveplayer = new ArrayList<PlayerTwo>();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                playerTwoListInThreeplayer = new ArrayList<PlayerTwo>();
             }
         }
         else if(fileName.equals(PLAYERTHREEFILENAME)){
@@ -167,58 +167,16 @@ public class ThreePlayer extends Activity implements OnClickListener {
                 Gson gson = new Gson();
                 // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
                 Type arrayListType = new TypeToken<ArrayList<PlayerThree>>(){}.getType();
-                playerThreeListInFiveplayer = gson.fromJson(in, arrayListType);
+                playerThreeListInThreeplayer = gson.fromJson(in, arrayListType);
 
 
             } catch (FileNotFoundException e) {
                 // TODO Auto-generated catch block
-                playerThreeListInFiveplayer = new ArrayList<PlayerThree>();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-        else if(fileName.equals(PLAYERFOURFILENAME)){
-            try {
-                FileInputStream fis = openFileInput(fileName);
-                BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-
-
-                Gson gson = new Gson();
-                // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
-                Type arrayListType = new TypeToken<ArrayList<PlayerFour>>(){}.getType();
-                playerFourListInFiveplayer = gson.fromJson(in, arrayListType);
-
-
-            } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
-                playerFourListInFiveplayer = new ArrayList<PlayerFour>();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-        }
-        else if(fileName.equals(PLAYERFIVEFILENAME)){
-            try {
-                FileInputStream fis = openFileInput(fileName);
-                BufferedReader in = new BufferedReader(new InputStreamReader(fis));
-
-
-                Gson gson = new Gson();
-                // https://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/com/google/gson/Gson.html, 2015-09-23
-                Type arrayListType = new TypeToken<ArrayList<PlayerFive>>(){}.getType();
-                playerFiveListInFiveplayer = gson.fromJson(in, arrayListType);
-
-
-            } catch (FileNotFoundException e) {
-                // TODO Auto-generated catch block
-                playerFiveListInFiveplayer = new ArrayList<PlayerFive>();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                playerThreeListInThreeplayer = new ArrayList<PlayerThree>();
             }
         }
 
-**/
+
+
     }
 }
